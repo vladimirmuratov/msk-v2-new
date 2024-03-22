@@ -1,0 +1,73 @@
+:root {
+    --green: #52AF3D;
+    --black: #4A474A;
+    --red: #d32f2f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.banner-container {
+
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.map {
+    width: 100%;
+    height: 245px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 70px;
+    }
+
+    .map {
+        height: 320px;
+    }
+}
+
+@media (min-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (min-width: 320px) {
+    .banner-container {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: 600px) {
+    .banner-container {
+        margin-top: 0;
+    }
+}
