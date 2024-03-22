@@ -17,7 +17,7 @@ export async function POST(request) {
                 <p>Информация: ${res?.info ?? 'Нет'}</p>`,
     }
 
-    let transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
         service: 'mail.ru',
         auth: {
             user: process.env.ADDRESS_FROM,
@@ -25,12 +25,11 @@ export async function POST(request) {
         },
     })
 
-    await transporter.sendMail(message, (err, info) => {
-
-        if(!info.messageId){
-            error = true
-        }
-    })
+    try {
+        await transporter.sendMail(message)
+    } catch (err) {
+        error = true
+    }
 
     return error
         ? await NextResponse.json({message: `Server Error!`}, {status: 500})
