@@ -6,6 +6,5 @@ export async function sendEmail(data) {
         },
         body: JSON.stringify(data)
     })
-
     return res.status
 }
