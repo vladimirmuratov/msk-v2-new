@@ -1,9 +1,10 @@
 import {Accordion, AccordionDetails, AccordionSummary} from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
-export const BaseAccordionItem = ({id, question, answer}) => {
+export const BaseAccordionItem = ({id, question, answer, expanded, onChange}) => {
+
     return(
-        <Accordion>
+        <Accordion expanded={expanded === `panel${id}`} onChange={() => onChange(`panel${id}`)}>
             <AccordionSummary
                 sx={{fontWeight: 500, fontSize: 18}}
                 expandIcon={<ExpandMoreIcon/>}
