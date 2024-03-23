@@ -21,7 +21,7 @@ export const ContactsBlock = () => {
                     </Box>
                     <Box sx={{display: 'flex', gap: '10px'}}>
                         <LocalPhoneOutlinedIcon sx={{color: 'var(--green)'}}/>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>{phoneNumber}</Typography>
+                        <Link href={`tel:${phoneNumber}`} sx={{fontSize: {xs: '14px', sm: '16px'}}}>{phoneNumber}</Link>
                     </Box>
                     <Box sx={{display: 'flex', gap: '10px'}}>
                         <AlternateEmailIcon sx={{color: 'var(--green)'}}/>
