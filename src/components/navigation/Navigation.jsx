@@ -12,10 +12,21 @@ export const Navigation = () => {
     const anchor = 'right'
 
     const [windowWidth, setWindowWidth] = useState(601)
+    const [isMobile, setMobile] = useState(false)
 
     useEffect(() => {
         setWindowWidth(window.screen.width)
     }, [])
+
+    useEffect(() => {
+
+        if (windowWidth <= 600) {
+            setMobile(true)
+        } else {
+            setMobile(false)
+        }
+
+    }, [windowWidth])
 
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'Escape' && (event.key === 'Tab')) {
@@ -27,7 +38,7 @@ export const Navigation = () => {
     return (
         <>
             <TemporaryDrawer anchor={anchor} toggleDrawer={toggleDrawer} isOpen={isOpen} router={router}/>
-            {windowWidth <= 600 ? <MobileHeader toggleDrawer={toggleDrawer}/> : <DesktopHeader/>}
+            {isMobile ? <MobileHeader isMobile={true} toggleDrawer={toggleDrawer}/> : <DesktopHeader/>}
         </>
     )
 }

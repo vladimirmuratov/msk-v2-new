@@ -3,11 +3,11 @@ import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu'
 import {ContactBanner} from '@/components/ContactBanner'
 
-export const MobileHeader = ({toggleDrawer}) => {
+export const MobileHeader = ({toggleDrawer, isMobile}) => {
     return(
         <Box sx={{position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1}}>
 
-            <ContactBanner/>
+            <ContactBanner isMobile={isMobile}/>
 
             <Box component="header"
                  sx={{
