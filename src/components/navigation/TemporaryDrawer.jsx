@@ -8,6 +8,7 @@ export const TemporaryDrawer = ({anchor, toggleDrawer, isOpen, router}) => {
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
+            sx={{minWidth: '200px'}}
         >
             <List>
                 {links.map(({id, label, path, Icon}) => (
