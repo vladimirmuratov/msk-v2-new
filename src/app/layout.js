@@ -1,11 +1,13 @@
 import {AppRouterCacheProvider} from '@mui/material-nextjs/v14-appRouter'
 import {ThemeProvider} from '@mui/material/styles'
 import {Montserrat} from 'next/font/google'
-import './globals.css'
-import theme from '@/theme'
 import {Box} from '@mui/material'
 import {Footer} from '@/components/Footer'
 import {Navigation} from '@/components/navigation/Navigation'
+import {Metrika} from '@/components/Metrika'
+import {Suspense} from 'react'
+import theme from '@/theme'
+import './globals.css'
 
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
@@ -23,6 +25,9 @@ export default function RootLayout({children}) {
                 <Box className="container">
                     <Navigation/>
                     {children}
+                    <Suspense>
+                        <Metrika/>
+                    </Suspense>
                     <Footer/>
                 </Box>
             </ThemeProvider>
