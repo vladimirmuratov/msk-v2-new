@@ -23,12 +23,12 @@ export default function RootLayout({children}) {
         <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>
                 <Box className="container">
-                    <Navigation/>
-                    {children}
                     <Suspense>
+                        <Navigation/>
+                        {children}
                         <Metrika/>
+                        <Footer/>
                     </Suspense>
-                    <Footer/>
                 </Box>
             </ThemeProvider>
         </AppRouterCacheProvider>
