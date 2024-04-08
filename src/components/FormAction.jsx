@@ -5,7 +5,7 @@ import {FloatBtn} from '@/components/FloatBtn'
 import {useEffect, useState} from 'react'
 import {MessageForm} from '@/components/MessageForm'
 import {timeOut} from '@/config'
-import {Modal} from '@/components/Modal'
+import {BaseModal} from '@/components/base/BaseModal'
 
 export const FormAction = () => {
     const [open, setOpen] = useState(false)
@@ -56,25 +56,25 @@ export const FormAction = () => {
         <Box>
             <FloatBtn handleOpen={handleClickOpen}/>
 
-            <Modal open={open} handleClose={handleClose} title="Связаться с нами">
+            <BaseModal open={open} handleClose={handleClose} title="Связаться с нами">
                 <MessageForm handleClose={handleClose} onSendForm={setSendForm} onError={setError}/>
-            </Modal>
+            </BaseModal>
 
             {sendForm && (
-                <Modal title="Сообщение отправлено!" open={sendForm} handleClose={handleCloseSuccessMessage}
-                       color="var(--green)">
+                <BaseModal title="Сообщение отправлено!" open={sendForm} handleClose={handleCloseSuccessMessage}
+                           color="var(--green)">
                     <DialogContentText id="alert-dialog-description">
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
-                </Modal>
+                </BaseModal>
             )}
 
             {isError && (
-                <Modal title="Ошибка сервера!" open={isError} handleClose={handleCloseFailedMessage} color="var(--red)">
+                <BaseModal title="Ошибка сервера!" open={isError} handleClose={handleCloseFailedMessage} color="var(--red)">
                     <DialogContentText id="alert-dialog-description">
                         Попробуйте позже
                     </DialogContentText>
-                </Modal>
+                </BaseModal>
             )}
 
         </Box>

@@ -1,5 +1,3 @@
-'use client'
-
 import {Fab} from '@mui/material'
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined'
 

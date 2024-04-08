@@ -9,7 +9,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />
 })
 
-export const Modal = ({title = '', children, open, handleClose, color = ''}) => {
+export const BaseModal = ({title = '', children, open, handleClose, color = ''}) => {
 
 
     return (

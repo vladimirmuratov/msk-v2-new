@@ -8,7 +8,7 @@ export async function POST(request) {
 
     const message = {
         from: process.env.ADDRESS_FROM,
-        to: [process.env.ADDRESS_TO_1, process.env.ADDRESS_TO_2, process.env.ADDRESS_TO_3],
+        to: [process.env.ADDRESS_TO_1, process.env.ADDRESS_TO_2, process.env.ADDRESS_TO_3, process.env.ADDRESS_TO_4],
         subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
         html: ` <p>Имя: ${res?.person}</p>
                 <p>Дата рождения: ${res?.dateBirth ?? 'Нет'}</p>
