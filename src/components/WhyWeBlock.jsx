@@ -9,7 +9,7 @@ export const WhyWeBlock = () => {
             color: 'var(--black)'
         }}>
 
-            <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}}}>Почему именно
+            <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Почему именно
                 мы?</Typography>
 
             <Typography component="p" sx={{fontSize: 20, marginBottom: '10px'}}>
