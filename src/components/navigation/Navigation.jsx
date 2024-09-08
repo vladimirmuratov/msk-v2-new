@@ -11,7 +11,7 @@ export const Navigation = () => {
     const [isOpen, setOpen] = useState(false)
     const anchor = 'right'
 
-    const [windowWidth, setWindowWidth] = useState(undefined)
+    const [windowWidth, setWindowWidth] = useState(600)
 
     useLayoutEffect(() => {
         setWindowWidth(window.screen.width)

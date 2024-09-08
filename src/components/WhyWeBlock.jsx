@@ -4,7 +4,7 @@ export const WhyWeBlock = () => {
     return (
         <Box id="whyWe" sx={{
             scrollMarginTop: {xs: '120px', sm: '50px'},
-            paddingX: '32px',
+            paddingX: {xs: '10px', lg: 0},
             paddingY: {xs: '25px', sm: '50px'},
             color: 'var(--black)'
         }}>

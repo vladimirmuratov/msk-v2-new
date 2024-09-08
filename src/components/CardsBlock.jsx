@@ -6,7 +6,7 @@ export const CardsBlock = () => {
     return (
         <Box
             sx={{
-                display: 'flex',
+                display: {xs: 'none', md: 'flex'},
                 flexDirection: {xs: 'column', sm: 'row'},
                 paddingBottom: {xs: '25px', sm: '50px'},
                 transform: 'translateY(-4px)'

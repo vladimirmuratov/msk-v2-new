@@ -2,7 +2,7 @@ import {Box, Typography} from '@mui/material'
 
 export const AboutBlock = () => {
     return (
-        <Box id='about' sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: '32px', paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}>
+        <Box id='about' sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: {xs: '10px', lg: 0}, paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}>
 
             <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>О нас</Typography>
 
