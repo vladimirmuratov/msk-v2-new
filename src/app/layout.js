@@ -12,8 +12,8 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'МСК',
-    description: 'Платная госпитализация в ведущие лечебные учреждения Москвы',
+    title: 'МСК | Платная госпитализация',
+    description: 'Медицинская помощь в федеральных и ведомственных лечебных учреждениях Москвы',
 }
 
 export default function RootLayout({children}) {
