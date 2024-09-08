@@ -13,12 +13,15 @@ const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
     title: 'МСК',
-    description: 'Платная госпитализация в ведущие лечебные учреждения Москвы'
+    description: 'Платная госпитализация в ведущие лечебные учреждения Москвы',
 }
 
 export default function RootLayout({children}) {
     return (
         <html lang="en">
+        <head>
+            <meta name="yandex-verification" content="dd2e2dbaa184eaca" />
+        </head>
         <body className={montserrat.className}>
         <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>
