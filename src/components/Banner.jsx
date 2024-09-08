@@ -24,7 +24,7 @@ export const Banner = () => {
             sx={{
                 marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
                 position: 'relative',
-                backgroundImage: 'url(/images/banner.png)',
+                backgroundImage: 'url(/images/banner2.webp)',
                 width: '100%',
                 height: {
                     xs: 'calc(var(--index) * 25)',
@@ -33,7 +33,7 @@ export const Banner = () => {
                     lg: 'calc(var(--index) * 23)'
                 },
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: {xs: 'center', sm: 'top'}
             }}>
             <Box
                 sx={{
@@ -48,14 +48,14 @@ export const Banner = () => {
                 <Typography
                     variant="h4"
                     sx={{
-                        fontSize: {xs: 16, sm: 32, md: 48},
-                        fontWeight: 600,
-                        color: 'var(--black)',
-                        textShadow: '0px 4px 4px lightgray'
+                        fontSize: {xs: 24, sm: 32, md: 48},
+                        fontWeight: 700,
+                        color: 'var(--red)',
+                        textShadow: '0px 4px 4px white',
+                        letterSpacing: 1
                     }}>
-                    Позаботьтесь<br/>
-                    о здоровье<br/>
-                    ваших родителей
+                    Платная<br/>
+                    госпитализация
                 </Typography>
 
                 <Button
