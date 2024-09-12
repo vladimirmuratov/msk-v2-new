@@ -6,7 +6,7 @@ export const BaseCard = ({label, icon, path, bgcolor}) => {
             href={path}
             underline="none"
             sx={{
-                ':hover': {transform: 'scale(105%)', zIndex: 1},
+                '&:hover': {transform: 'scale(105%)', zIndex: 1},
                 transition: '0.3s',
                 display: 'flex',
                 flexDirection: 'column',
