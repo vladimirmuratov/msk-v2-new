@@ -12,15 +12,15 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'МСК | Платная госпитализация',
-    description: 'Медицинская помощь в федеральных и ведомственных лечебных учреждениях Москвы',
+    title: 'МСК | Госпитализация',
+    description: 'Платная госпитализация в федеральные и ведомственные лечебные учреждения г.Москвы. Платная скорая помощь. Перевод пациента из одной больницы в другую. Экстренная платная госпитализация. Платная госпитализация без полиса ОМС. Платная госпитализация из регионов. Работа с тяжелыми пациентами. Патронажная служба',
 }
 
 export default function RootLayout({children}) {
     return (
         <html lang="en">
         <head>
-            <meta name="yandex-verification" content="dd2e2dbaa184eaca" />
+            <meta name="yandex-verification" content="dd2e2dbaa184eaca"/>
         </head>
         <body className={montserrat.className}>
         <AppRouterCacheProvider>

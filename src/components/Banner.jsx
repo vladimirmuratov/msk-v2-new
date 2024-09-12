@@ -46,7 +46,7 @@ export const Banner = () => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h1"
                     sx={{
                         fontSize: {xs: 24, sm: 32, md: 48},
                         fontWeight: 700,
