@@ -20,7 +20,7 @@ export default function Home() {
             <AboutBlock/>
             <WhyWeBlock/>
             <WeRespondBlock/>
-            <WhatWeOfferBlock/>
+            {/*<WhatWeOfferBlock/>*/}
             <DirectionsOfHospitalizationBlock/>
             <BaseAccordion id='faq' title='Частые вопросы' items={faq}/>
             <PartnersBlock/>
