@@ -5,57 +5,57 @@ export const DirectionsOfHospitalizationBlock = () => {
     return (
         <Box id='directions' sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: {xs: '10px', lg: 0}, paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}>
 
-            <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Направления госпитализации:</Typography>
+            <Typography variant="h2" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Направления госпитализации:</Typography>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Абдоминальная хирургия</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Абдоминальная хирургия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Гинекология</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Гинекология</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Лор и челюстно-лицевая
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Лор и челюстно-лицевая
                     хирургия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Нейрохирургия</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Нейрохирургия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Онкология</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Онкология</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Офтальмохирургия</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Офтальмохирургия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Травматология и ортопедия</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Травматология и ортопедия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Урология</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Урология</Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Кардиология</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Кардиология</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Неврология</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Неврология</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Терапия</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Терапия</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Реабилитация</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Реабилитация</Typography>
             </Box>
         </Box>
     )
