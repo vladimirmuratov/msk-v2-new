@@ -51,11 +51,14 @@ export const Banner = () => {
                         fontSize: {xs: 24, sm: 32, md: 48},
                         fontWeight: 700,
                         color: 'var(--red)',
-                        textShadow: '0px 4px 4px white',
+                        textShadow: '4px 4px 4px white',
                         letterSpacing: 1
                     }}>
-                    Платная<br/>
-                    госпитализация
+                    Лечение в лучших
+                    <br/>
+                    клиниках Москвы
+                    {/*Платная<br/>*/}
+                    {/*госпитализация*/}
                 </Typography>
 
                 <Button
