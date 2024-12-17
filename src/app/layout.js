@@ -12,7 +12,7 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'Лечение в лучших клиниках москвы 8 (499) 719-81-00, 24/7',
+    title: 'Лечение в лучших клиниках Москвы 8 (499) 719-81-00, 24/7',
     description: 'Лечение в лучших клиниках Москвы: высококвалифицированные специалисты и круглосуточная поддержка. Звоните 8 (499) 719-81-00 для записи!',
     alternates: {
         canonical: "https://www.msk-emergency.ru/"
