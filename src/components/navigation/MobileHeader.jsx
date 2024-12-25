@@ -26,12 +26,12 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                     href={`tel:${phoneNumber}`}
                     sx={{
                         textDecoration: 'underline',
-                        textDecorationColor: 'var(--red)'
+                        textDecorationColor: 'var(--white)'
                     }}
                 >
                     <Typography
                         sx={{
-                            color: 'var(--red)',
+                            color: 'var(--white)',
                             fontWeight: 600
                         }}
                     >{phoneNumber}</Typography>
