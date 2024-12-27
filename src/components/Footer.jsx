@@ -1,5 +1,5 @@
-import {Box, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
+import { Box, Link, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
 
 export const Footer = () => {
     return (
@@ -8,23 +8,37 @@ export const Footer = () => {
             sx={{
                 borderTop: '1px solid var(--green)',
                 display: 'flex',
-                flexDirection: {xs: 'column', sm: 'row'},
+                flexDirection: { xs: 'column', sm: 'row' },
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 paddingX: '32px',
                 paddingY: '20px'
             }}>
-            <Typography
-                sx={{color: 'var(--green)', fontSize: '20px', fontWeight: 600, letterSpacing: 2}}>МСК</Typography>
+            <Box sx={{ color: 'var(--green)', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Typography
+                    sx={{
+                        fontSize: '20px',
+                        fontWeight: 600,
+                        letterSpacing: 2
+                    }}
+                >
+                    МСК
+                </Typography>
+                <Box component="span">&copy;</Box>
+                <Box component="span">2014 — {new Date().getFullYear()}</Box>
+            </Box>
+
             <Box sx={{
                 color: 'var(--green)',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: {xs: 'flex-start', sm: 'flex-end'}
+                alignItems: { xs: 'center', sm: 'flex-end' }
             }}>
-                <Typography sx={{fontSize: '14px'}}>г. Москва, Мичуринский пр-т, д. 6</Typography>
-                <Typography sx={{fontSize: '14px'}}>{phoneNumber}</Typography>
+                <Typography sx={{ fontSize: '14px' }}>г. Москва, Мичуринский пр-т, д. 6</Typography>
+                <Link href={`tel:${phoneNumber}`} sx={{ color: 'var(--green)', textDecorationColor: 'var(--green)' }}>
+                    <Typography sx={{ fontSize: '14px' }}>{phoneNumber}</Typography>
+                </Link>
             </Box>
         </Box>
-    )
-}
+    );
+};

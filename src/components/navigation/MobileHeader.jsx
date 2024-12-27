@@ -22,20 +22,20 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                     <img className="logo" src="/images/logo-white.png" alt="logo"/>
                 </Link>
 
-                <Link
+                {/*<Link
                     href={`tel:${phoneNumber}`}
                     sx={{
+                        color: 'var(--white)',
                         textDecoration: 'underline',
                         textDecorationColor: 'var(--white)'
                     }}
                 >
                     <Typography
                         sx={{
-                            color: 'var(--white)',
                             fontWeight: 600
                         }}
                     >{phoneNumber}</Typography>
-                </Link>
+                </Link>*/}
 
                 <IconButton onClick={toggleDrawer(true)}>
                     <MenuIcon sx={{color: '#fff'}}/>
