@@ -140,3 +140,9 @@ a {
         transform: scale(1.7, 1.7);
     }
 }
+
+.video-banner{
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}

@@ -9,7 +9,7 @@ import SocialBlock from '@/components/SocialBlock';
 export const DesktopHeader = () => {
     const scrollContainer = useRef();
     const [position, setPosition] = useState('relative');
-    const [currentPath, setCurrentPath] = useState('')
+    const [currentPath, setCurrentPath] = useState('');
 
     const onScroll = useCallback(() => {
         const { top, bottom } = scrollContainer.current.getBoundingClientRect();
@@ -59,7 +59,8 @@ export const DesktopHeader = () => {
                 </Link>
 
                 <Box component="nav" sx={{ display: { xs: 'none', sm: 'flex' }, gap: { sm: '10px', md: '15px' } }}>
-                    {links.map((link) => <BaseLink key={link.id} {...link} setCurrentPath={setCurrentPath} currentPath={currentPath}/>)}
+                    {links.map((link) => <BaseLink key={link.id} {...link} setCurrentPath={setCurrentPath}
+                                                   currentPath={currentPath} />)}
                 </Box>
 
                 <SocialBlock />
