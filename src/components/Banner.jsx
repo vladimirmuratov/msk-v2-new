@@ -24,22 +24,26 @@ export const Banner = () => {
             sx={{
                 marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
                 position: 'relative',
-                backgroundImage: 'url(/images/banner2.webp)',
+                backgroundImage: 'url(/images/banner3.webp)',
                 width: '100%',
-                height: {
+                /*height: {
                     xs: 'calc(var(--index) * 25)',
                     sm: 'calc(var(--index) * 26)',
                     md: 'calc(var(--index) * 27)',
                     lg: 'calc(var(--index) * 23)'
-                },
+                },*/
+                height: 'calc(var(--index) * 25)',
                 backgroundSize: 'cover',
-                backgroundPosition: {xs: 'center', sm: 'top'}
+                // backgroundPosition: {xs: 'center', sm: 'top'},
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
             }}>
             <Box
                 sx={{
-                    position: 'absolute',
-                    top: {xs: '20%', sm: '20%'},
-                    left: '5%',
+                    // position: 'absolute',
+                    // top: {xs: '20%', sm: '20%'},
+                    // left: '5%',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '10px'
@@ -48,11 +52,12 @@ export const Banner = () => {
                 <Typography
                     variant="h1"
                     sx={{
-                        fontSize: {xs: 24, sm: 32, md: 48},
-                        fontWeight: 700,
+                        fontSize: {xs: 24, sm: 42, md: 58, lg: 68},
+                        fontWeight: 400,
                         color: 'var(--red)',
-                        textShadow: '4px 4px 4px white',
-                        letterSpacing: 1
+                        textShadow: '2px 2px 4px white',
+                        letterSpacing: 1,
+                        textTransform: 'uppercase'
                     }}>
                     Лечение в лучших
                     <br/>
@@ -67,8 +72,9 @@ export const Banner = () => {
                     color="error"
                     size="small"
                     sx={{
-                        display: isMobile ? 'block' : 'none',
-                        alignSelf: 'flex-start'
+                        // display: isMobile ? 'block' : 'none',
+                        // alignSelf: 'flex-start'
+                        alignSelf: 'center'
                     }}
                 >
                     Позвонить
@@ -77,7 +83,8 @@ export const Banner = () => {
                 <Box
                     sx={{
                         display: isMobile ? 'block' : 'none',
-                        alignSelf: 'flex-start'
+                        // alignSelf: 'flex-start'
+                        alignSelf: 'center'
                     }}
                 >
                     <SocialBlock/>
