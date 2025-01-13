@@ -16,8 +16,9 @@ export const ContactBanner = ({ isMobile = false }) => {
             color: 'var(--black)',
             backgroundColor: bgColor
         }}>
-            <Typography sx={{ color: color, fontSize: { xs: 12, sm: 14, md: 16 } }}>г. Москва, Мичуринский пр-т , д.
-                6</Typography>
+            <Typography sx={{ color: color, fontSize: { xs: 12, sm: 14, md: 16 } }}>
+                г. Москва, Мичуринский пр-т , д. 6
+            </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Link
                     href={`tel:${phoneNumber}`}

@@ -55,7 +55,7 @@ export const Banner = () => {
                         fontSize: {xs: 24, sm: 42, md: 58, lg: 68},
                         fontWeight: 400,
                         color: 'var(--red)',
-                        textShadow: '2px 2px 4px white',
+                        textShadow: '2px 2px 2px white',
                         letterSpacing: 1,
                         textTransform: 'uppercase'
                     }}>

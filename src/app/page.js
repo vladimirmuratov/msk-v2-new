@@ -1,4 +1,6 @@
-// import {Banner} from '@/components/Banner'
+'use client'
+
+import {Banner} from '@/components/Banner';
 import { CardsBlock } from '@/components/CardsBlock';
 import { AboutBlock } from '@/components/AboutBlock';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
@@ -12,12 +14,25 @@ import { TextBlock } from '@/components/TextBlock';
 import { ContactsBlock } from '@/components/ContactsBlock';
 import { FormAction } from '@/components/FormAction';
 import { VideoBanner } from '@/components/VideoBanner';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+    const [isMobile, setMobile] = useState(true)
+
+    useEffect(() => {
+        const os = navigator.userAgentData.platform
+
+        if (os === 'Android' || os === 'iOS') {
+            setMobile(true)
+        }else {
+            setMobile(false)
+        }
+
+    }, [])
+
     return (
         <main style={{ position: 'relative' }}>
-            {/*<Banner/>*/}
-            <VideoBanner />
+            {isMobile ? <Banner/> : <VideoBanner />}
             <CardsBlock />
             <AboutBlock />
             <WhyWeBlock />
