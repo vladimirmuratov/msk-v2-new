@@ -46,7 +46,7 @@ export const Banner = () => {
                     // left: '5%',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '10px'
+                    gap: '15px'
                 }}
             >
                 <Typography
