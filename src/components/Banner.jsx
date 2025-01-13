@@ -53,9 +53,9 @@ export const Banner = () => {
                     variant="h1"
                     sx={{
                         fontSize: {xs: 24, sm: 42, md: 58, lg: 68},
-                        fontWeight: 400,
-                        color: 'var(--red)',
-                        textShadow: '2px 2px 2px white',
+                        fontWeight: 500,
+                        color: 'var(--white)',
+                        textShadow: '2px 2px 2px var(--black)',
                         letterSpacing: 1,
                         textTransform: 'uppercase'
                     }}>
