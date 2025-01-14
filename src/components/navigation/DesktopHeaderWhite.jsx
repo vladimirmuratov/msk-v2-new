@@ -2,22 +2,21 @@ import { Box } from '@mui/material';
 import { links } from '@/config';
 import Link from 'next/link';
 import { ContactBanner } from '@/components/ContactBanner';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { BaseLink } from '@/components/base/BaseLink';
 import SocialBlock from '@/components/SocialBlock';
 
-export const DesktopHeader = () => {
-    const scrollContainer = useRef();
-    const [position, setPosition] = useState('relative');
-    const [currentPath, setCurrentPath] = useState('');
+export const DesktopHeaderWhite = ({ onHide, currentPath, setCurrentPath }) => {
+    const scrollContainer = useRef(null);
 
     const onScroll = useCallback(() => {
-        const { top, bottom } = scrollContainer.current.getBoundingClientRect();
+        const { bottom } = scrollContainer.current.getBoundingClientRect();
         if (bottom <= 0) {
-            setPosition('fixed');
+            onHide(true);
         } else {
-            setPosition('relative');
+            onHide(false);
         }
+
     }, []);
 
     useEffect(() => {
@@ -40,10 +39,6 @@ export const DesktopHeader = () => {
                 component="header"
                 className="container"
                 sx={{
-                    position: position,
-                    top: 0,
-                    left: 0,
-                    right: 0,
                     zIndex: 1,
                     backgroundColor: 'var(--white)',
                     paddingY: '12px',
@@ -59,8 +54,12 @@ export const DesktopHeader = () => {
                 </Link>
 
                 <Box component="nav" sx={{ display: { xs: 'none', sm: 'flex' }, gap: { sm: '10px', md: '15px' } }}>
-                    {links.map((link) => <BaseLink key={link.id} {...link} setCurrentPath={setCurrentPath}
-                                                   currentPath={currentPath} />)}
+                    {links.map((link) => <BaseLink
+                        key={link.id}
+                        {...link}
+                        setCurrentPath={setCurrentPath}
+                        currentPath={currentPath} />
+                    )}
                 </Box>
 
                 <SocialBlock />

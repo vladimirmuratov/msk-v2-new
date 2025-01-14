@@ -1,33 +1,53 @@
-'use client'
+'use client';
 
-import {useRouter} from 'next/navigation'
-import {useLayoutEffect, useState} from 'react'
-import {TemporaryDrawer} from '@/components/navigation/TemporaryDrawer'
-import {MobileHeader} from '@/components/navigation/MobileHeader'
-import {DesktopHeader} from '@/components/navigation/DesktopHeader'
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { TemporaryDrawer } from '@/components/navigation/TemporaryDrawer';
+import { MobileHeader } from '@/components/navigation/MobileHeader';
+import { DesktopHeaderWhite } from '@/components/navigation/DesktopHeaderWhite';
+import { DesktopHeaderGreen } from '@/components/navigation/DesktopHeaderGreen';
 
 export const Navigation = () => {
-    const router = useRouter()
-    const [isOpen, setOpen] = useState(false)
-    const anchor = 'right'
+    const router = useRouter();
+    const [isOpen, setOpen] = useState(false);
+    const anchor = 'right';
 
-    const [windowWidth, setWindowWidth] = useState(600)
+    // const [windowWidth, setWindowWidth] = useState(600);
+    const [isHide, setHide] = useState(false);
+    const [currentPath, setCurrentPath] = useState('');
+    const [isMobile, setMobile] = useState(undefined);
 
-    useLayoutEffect(() => {
-        setWindowWidth(window.screen.width)
-    }, [])
+    useEffect(() => {
+        const os = navigator.userAgentData.platform;
+
+        if (os === 'Android' || os === 'iOS') {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
+
+    }, []);
+
+    /*useLayoutEffect(() => {
+        setWindowWidth(window.screen.width);
+    }, []);*/
 
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'Escape' && (event.key === 'Tab')) {
-            setOpen(false)
+            setOpen(false);
         }
-        setOpen(open)
-    }
+        setOpen(open);
+    };
 
     return (
         <>
-            <TemporaryDrawer anchor={anchor} toggleDrawer={toggleDrawer} isOpen={isOpen} router={router}/>
-            {windowWidth <= 600 ? <MobileHeader isMobile={true} toggleDrawer={toggleDrawer}/> : <DesktopHeader/>}
+            <TemporaryDrawer anchor={anchor} toggleDrawer={toggleDrawer} isOpen={isOpen} router={router} />
+            {(typeof isMobile === 'boolean' && isMobile) /*&& windowWidth <= 600*/
+                ? <MobileHeader isMobile={true} toggleDrawer={toggleDrawer} />
+                : isMobile === false && <DesktopHeaderWhite onHide={setHide} currentPath={currentPath} setCurrentPath={setCurrentPath} />
+            }
+            {/*windowWidth > 600*/ (typeof isMobile === 'boolean' && isMobile === false) &&
+                <DesktopHeaderGreen isShow={isHide} currentPath={currentPath} setCurrentPath={setCurrentPath} />}
         </>
-    )
-}
+    );
+};

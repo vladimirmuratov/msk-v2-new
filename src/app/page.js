@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import {Banner} from '@/components/Banner';
+import { Banner } from '@/components/Banner';
 import { CardsBlock } from '@/components/CardsBlock';
 import { AboutBlock } from '@/components/AboutBlock';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
@@ -15,36 +15,42 @@ import { ContactsBlock } from '@/components/ContactsBlock';
 import { FormAction } from '@/components/FormAction';
 import { VideoBanner } from '@/components/VideoBanner';
 import { useEffect, useState } from 'react';
+import { Loader } from '@/components/loader/Loader';
 
 export default function Home() {
-    const [isMobile, setMobile] = useState(true)
+    const [isMobile, setMobile] = useState(undefined);
 
     useEffect(() => {
-        const os = navigator.userAgentData.platform
+        const os = navigator.userAgentData.platform;
 
         if (os === 'Android' || os === 'iOS') {
-            setMobile(true)
-        }else {
-            setMobile(false)
+            setMobile(true);
+        } else {
+            setMobile(false);
         }
 
-    }, [])
+    }, []);
 
     return (
         <main style={{ position: 'relative' }}>
-            {isMobile ? <Banner/> : <VideoBanner />}
-            <CardsBlock />
-            <AboutBlock />
-            <WhyWeBlock />
-            <WeRespondBlock />
-            {/*<WhatWeOfferBlock/>*/}
-            <DirectionsOfHospitalizationBlock />
-            <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
-            <PartnersBlock />
-            <BaseAccordion id="service" title="Услуги" items={services} />
-            <TextBlock text={text1} />
-            <ContactsBlock />
-            <FormAction />
+            {typeof isMobile === 'boolean'
+                ? <>
+                    {isMobile ? <Banner /> : <VideoBanner />}
+                    <CardsBlock />
+                    <AboutBlock />
+                    <WhyWeBlock />
+                    <WeRespondBlock />
+                    {/*<WhatWeOfferBlock/>*/}
+                    <DirectionsOfHospitalizationBlock />
+                    <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
+                    <PartnersBlock />
+                    <BaseAccordion id="service" title="Услуги" items={services} />
+                    <TextBlock text={text1} />
+                    <ContactsBlock />
+                    <FormAction />
+                </>
+                : <Loader/>
+            }
         </main>
     );
 }
