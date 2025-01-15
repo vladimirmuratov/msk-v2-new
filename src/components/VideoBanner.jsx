@@ -1,24 +1,13 @@
-'use client'
+'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 export const VideoBanner = React.memo(() => {
-    const [isMobile, setMobile] = useState(false);
-
-    useEffect(() => {
-        const os = navigator.userAgentData.platform;
-
-        if (os === 'Android' || os === 'iOS') {
-            setMobile(true);
-        }
-
-    }, []);
 
     return (
         <Box
             sx={{
-                marginTop: isMobile ? { xs: '110px', sm: '95px' } : 0,
                 position: 'relative'
             }}
         >
