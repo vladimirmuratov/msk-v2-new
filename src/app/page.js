@@ -18,39 +18,39 @@ import { useEffect, useState } from 'react';
 import { Loader } from '@/components/loader/Loader';
 
 export default function Home() {
-    const [isMobile, setMobile] = useState(undefined);
+  const [isMobile, setMobile] = useState(undefined);
 
-    useEffect(() => {
-        const os = navigator.userAgentData.platform;
+  useEffect(() => {
+    const os = navigator.userAgentData.platform;
 
-        if (os === 'Android' || os === 'iOS') {
-            setMobile(true);
-        } else {
-            setMobile(false);
-        }
+    if (os === 'Android' || os === 'iOS') {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, []);
 
-    }, []);
-
-    return (
-        <main style={{ position: 'relative' }}>
-            {typeof isMobile === 'boolean'
-                ? <>
-                    {isMobile ? <Banner /> : <VideoBanner />}
-                    <CardsBlock />
-                    <AboutBlock />
-                    <WhyWeBlock />
-                    <WeRespondBlock />
-                    {/*<WhatWeOfferBlock/>*/}
-                    <DirectionsOfHospitalizationBlock />
-                    <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
-                    <PartnersBlock />
-                    <BaseAccordion id="service" title="Услуги" items={services} />
-                    <TextBlock text={text1} />
-                    <ContactsBlock />
-                    <FormAction />
-                </>
-                : <Loader/>
-            }
-        </main>
-    );
+  return (
+    <main style={{ position: 'relative' }}>
+      {typeof isMobile === 'boolean' ? (
+        <>
+          {isMobile ? <Banner /> : <VideoBanner />}
+          <CardsBlock />
+          <AboutBlock />
+          <WhyWeBlock />
+          <WeRespondBlock />
+          {/*<WhatWeOfferBlock/>*/}
+          <DirectionsOfHospitalizationBlock />
+          <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
+          <PartnersBlock />
+          <BaseAccordion id="service" title="Услуги" items={services} />
+          <TextBlock text={text1} />
+          <ContactsBlock />
+          <FormAction />
+        </>
+      ) : (
+        <Loader />
+      )}
+    </main>
+  );
 }

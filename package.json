@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write src/**/*.js"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -20,5 +21,10 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.1"
+  },
+  "devDependencies": {
+    "eslint": "9.18.0",
+    "eslint-config-next": "15.1.5",
+    "prettier": "^3.4.2"
   }
 }
