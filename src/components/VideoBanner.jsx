@@ -31,13 +31,13 @@ export const VideoBanner = React.memo(() => {
                     letterSpacing: 1,
                     textTransform: 'uppercase',
                     textAlign: 'center',
-                    width: '100%'
+                    width: '100%',
                 }}>
-                Лечение в лучших
-                <br />
-                клиниках Москвы
-                {/*Платная<br/>*/}
-                {/*госпитализация*/}
+                {/*Лечение в лучших*/}
+                {/*<br />*/}
+                {/*клиниках Москвы*/}
+                Платная<br/>
+                госпитализация
             </Typography>
 
         </Box>

@@ -57,13 +57,14 @@ export const Banner = () => {
                         color: 'var(--white)',
                         textShadow: '2px 2px 2px var(--black)',
                         letterSpacing: 1,
-                        textTransform: 'uppercase'
+                        textTransform: 'uppercase',
+                        textAlign: 'center',
                     }}>
-                    Лечение в лучших
-                    <br/>
-                    клиниках Москвы
-                    {/*Платная<br/>*/}
-                    {/*госпитализация*/}
+                    {/*Лечение в лучших*/}
+                    {/*<br/>*/}
+                    {/*клиниках Москвы*/}
+                    Платная<br/>
+                    госпитализация
                 </Typography>
 
                 <Button
