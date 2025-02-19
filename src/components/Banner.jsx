@@ -1,28 +1,28 @@
-'use client'
+'use client';
 
-import {Box, Button, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
-import SocialBlock from '@/components/SocialBlock'
+import { Box, Button, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import SocialBlock from '@/components/SocialBlock';
 
 export const Banner = () => {
-    const router = useRouter()
-    const [isMobile, setMobile] = useState(false)
+    const router = useRouter();
+    const [isMobile, setMobile] = useState(false);
 
     useEffect(() => {
-        const os = navigator.userAgentData.platform
+        const os = navigator.userAgentData.platform;
 
         if (os === 'Android' || os === 'iOS') {
-            setMobile(true)
+            setMobile(true);
         }
 
-    }, [])
+    }, []);
 
     return (
         <Box
             sx={{
-                marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
+                marginTop: isMobile ? { xs: '110px', sm: '95px' } : 0,
                 position: 'relative',
                 backgroundImage: 'url(/images/banner3.webp)',
                 width: '100%',
@@ -52,7 +52,7 @@ export const Banner = () => {
                 <Typography
                     variant="h1"
                     sx={{
-                        fontSize: {xs: 24, sm: 42, md: 58, lg: 68},
+                        fontSize: { xs: 24, sm: 42, md: 58, lg: 68 },
                         fontWeight: 500,
                         color: 'var(--white)',
                         textShadow: '2px 2px 2px var(--black)',
@@ -63,11 +63,12 @@ export const Banner = () => {
                     {/*Лечение в лучших*/}
                     {/*<br/>*/}
                     {/*клиниках Москвы*/}
-                    Платная<br/>
+                    Платная<br />
                     госпитализация
                 </Typography>
 
                 <Button
+                    className="animation-btn"
                     onClick={() => router.push(`tel:${phoneNumber}`)}
                     variant="contained"
                     color="error"
@@ -88,10 +89,10 @@ export const Banner = () => {
                         alignSelf: 'center'
                     }}
                 >
-                    <SocialBlock/>
+                    <SocialBlock />
                 </Box>
             </Box>
 
         </Box>
-    )
-}
+    );
+};

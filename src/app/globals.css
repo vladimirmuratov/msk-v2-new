@@ -153,3 +153,27 @@ a {
     height: auto;
     filter: brightness(70%);
 }
+
+/*-------------ANIMATION BTN----------------*/
+
+.animation-btn {
+    background-image: linear-gradient(-60deg,
+    #ffffff00 0%, #ffffff00 40%,
+    #ffffff44 40%, #ffffff00 60%,
+    #ffffff00 60%, #ffffff00 100%);
+
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+
+    animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position-x: 150%;
+    }
+    40%,
+    100% {
+        background-position-x: -150%;
+    }
+}
