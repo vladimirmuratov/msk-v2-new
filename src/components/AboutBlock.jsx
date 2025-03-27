@@ -12,12 +12,20 @@ export const AboutBlock = () => {
             }}
         >
 
-            <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '28px', sm: '34px' }, fontWeight: 500 }}>О
-                нас</Typography>
+            <Typography
+                variant="h2"
+                        sx={{
+                            marginBottom: '20px',
+                            fontSize: { xs: '28px', sm: '34px' },
+                            fontWeight: 400,
+                            color: 'var(--red)'
+            }}
+            >
+                О нас
+            </Typography>
 
             <Typography component="p" sx={{ fontSize: 20, marginBottom: '10px' }}>
-                <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box> выступает авторизованным представителем
+                <Box component="span" sx={{ fontWeight: 500, color: 'var(--red)' }}>Медицинская Сервисная Компания</Box> выступает авторизованным представителем
                 столичных медицинских учреждений, ведомственных
                 структур охраны здоровья и федеральных клиник под эгидой Управления делами Президента РФ.
 

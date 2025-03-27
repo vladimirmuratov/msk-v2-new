@@ -22,7 +22,8 @@ export const ContactsBlock = () => {
                 sx={{
                     marginBottom: '20px',
                     fontSize: { xs: '28px', sm: '34px' },
-                    fontWeight: 500
+                    fontWeight: 400,
+                    color: 'var(--red)'
                 }}>Контакты</Typography>
 
             <Box
