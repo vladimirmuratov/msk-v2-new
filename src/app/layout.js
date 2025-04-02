@@ -21,14 +21,15 @@ export const metadata = {
         title: 'Платная госпитализация в Москве. 8 (499) 719-81-00, 24/7',
         description: '10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Оперативно. Минимум документов. Финансовая прозрачность.',
         images: ['/images/banner3.webp'],
-        url: 'https://www.msk-emergency.ru',
+        url: 'https://www.msk-emergency.ru/',
         type: 'website',
+        locale: 'ru_RU',
     }
 };
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" prefix="og: https://ogp.me/ns#">
         <head>
             <meta name="yandex-verification" content="dd2e2dbaa184eaca" />
         </head>
