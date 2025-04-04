@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
         <html lang="en" prefix="og: https://ogp.me/ns#">
         <head>
             <meta name="yandex-verification" content="dd2e2dbaa184eaca" />
+            <meta name="google-site-verification" content="ULxFdlnvp2gnAXLazRK1F8C95byeEkOULFcsE4swYWI" />
         </head>
         <body className={montserrat.className}>
         <AppRouterCacheProvider>
