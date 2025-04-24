@@ -110,14 +110,21 @@ export const WeRespondBlock = () => {
             </Box>
 
             <Box
-                component="p"
                 sx={{
-                    marginTop: '20px',
-                    fontSize: { xs: 18, sm: 20 },
+                    paddingTop: { xs: '50px', sm: '100px' },
                 }}
             >
-                С нами вы получаете не просто подбор клиники — вы получаете решение.<br/>
-                Обратитесь к нам, и мы подберём оптимальный медицинский вариант под ваши задачи.
+                <Typography
+                    sx={{
+                        fontSize: { xs: 22, sm: 26 },
+                        fontWeight: 500,
+                        color: 'var(--red)',
+                        textAlign: 'center',
+                    }}
+                >
+                    С нами вы получаете не просто подбор клиники — вы получаете решение.<br />
+                    Обратитесь к нам, и мы подберём оптимальный вариант под ваши задачи.
+                </Typography>
             </Box>
         </Box>
     );

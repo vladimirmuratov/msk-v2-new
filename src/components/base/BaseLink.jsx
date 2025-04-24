@@ -13,7 +13,8 @@ export const BaseLink = ({ path, label, setCurrentPath, currentPath, isGreenHead
                 textDecoration: isGreenHeader ?'underline': 'none',
                 textDecorationColor: activeLink,
                 '&:hover': {
-                    textDecorationColor: 'var(--white)'
+                    textDecorationColor: 'var(--white)',
+                    textShadow: !isGreenHeader ? '2px 2px 2px var(--gray)' : '',
                 }
         }}
         >

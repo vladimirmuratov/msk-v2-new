@@ -6,6 +6,7 @@ import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivism
 import { createId } from '@/lib/IdGenerator';
 
 export const phoneNumber = '+7 (499) 719-81-00';
+export const phoneNumber2 = '+7 (925) 179-97-86';
 
 export const phoneWhatsApp = '+79268158505';
 export const phoneTelegram = '+79268158505';

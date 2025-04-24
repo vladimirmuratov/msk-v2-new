@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from '@mui/material';
-import { email, phoneNumber } from '@/config';
+import { email, phoneNumber, phoneNumber2 } from '@/config';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
@@ -34,10 +34,12 @@ export const ContactsBlock = () => {
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>г. Москва, Мичуринский пр-т
                             д.6</Typography>
                     </Box>
-                    <Box sx={{ display: 'flex', gap: '10px' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'start', gap: '10px' }}>
                         <LocalPhoneOutlinedIcon sx={{ color: 'var(--green)' }} />
-                        <Link href={`tel:${phoneNumber}`}
-                              sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber}</Link>
+                        <Box sx={{display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                            <Link href={`tel:${phoneNumber}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber}</Link>
+                            <Link href={`tel:${phoneNumber2}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber2}</Link>
+                        </Box>
                     </Box>
                     <Box sx={{ display: 'flex', gap: '10px' }}>
                         <AlternateEmailIcon sx={{ color: 'var(--green)' }} />
