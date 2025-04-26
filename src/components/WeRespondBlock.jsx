@@ -115,11 +115,14 @@ export const WeRespondBlock = () => {
                 }}
             >
                 <Typography
+                    variant="h3"
                     sx={{
-                        fontSize: { xs: 22, sm: 26 },
-                        fontWeight: 500,
+                        fontSize: { xs: 22, sm: 24 },
                         color: 'var(--red)',
                         textAlign: 'center',
+                        fontStyle: 'italic',
+                        textWrap: 'balance',
+                        lineHeight: 1.5
                     }}
                 >
                     С нами вы получаете не просто подбор клиники — вы получаете решение.<br />

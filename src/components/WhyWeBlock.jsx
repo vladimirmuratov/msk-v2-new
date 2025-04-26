@@ -36,6 +36,24 @@ export const WhyWeBlock = () => {
             <Typography component="p" sx={{ fontSize: 20, marginBottom: '10px' }}>
                 Подход к каждому клиенту индивидуален, что обеспечивает соответствие всем требованиям и условиям.
             </Typography>
+
+            <Box>
+                <Typography
+                    variant="h3"
+                    sx={{
+                        fontSize: { xs: 22, sm: 24 },
+                        color: 'var(--red)',
+                        paddingTop: { xs: '10px', sm: '20px' },
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        textWrap: 'balance',
+                        lineHeight: 1.5
+                    }}
+                >
+                    Ваше здоровье требует оперативных решений? Мы быстро организуем госпитализацию в проверенные клиники
+                    Москвы, учитывая специфику диагноза и подбирая наиболее подходящего врача.
+                </Typography>
+            </Box>
         </Box>
     );
 };
