@@ -3,13 +3,15 @@ import { Box } from '@mui/material';
 
 export const Loader = () => {
     return (
-        <Box sx={{
-            height: '85vh',
-            marginTop: '120px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-        }}>
+        <Box
+            sx={{
+                height: '85vh',
+                marginTop: '120px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}
+        >
             <div className="socket">
                 <div className="gel center-gel">
                     <div className="hex-brick h1"></div>

@@ -61,7 +61,7 @@ export const MessageForm = ({handleClose, onSendForm, onError}) => {
 
             <Box sx={{display: 'flex', gap: '10px'}}>
                 <Button type="submit" disabled={!checked || isSubmitting} variant="contained"
-                        sx={{backgroundColor: 'var(--green)'}}>Отправить</Button>
+                        sx={{backgroundColor: 'var(--main-color)'}}>Отправить</Button>
                 <Button onClick={handleClose} sx={{color: 'var(--red)'}}>Отмена</Button>
             </Box>
         </Box>

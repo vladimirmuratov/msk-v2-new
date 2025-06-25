@@ -9,7 +9,7 @@
 }
 
 .hex-brick{
-    background: var(--green);
+    background: var(--main-color);
     width: 30px;
     height: 17px;
     position: absolute;
@@ -324,15 +324,15 @@
 
 @keyframes fade{
     0%{
-        background: var(--green);
+        background: var(--main-color);
     }
 
     50%{
-        background: #63b750;
+        background: var(--main-color);
     }
 
     100%{
-        background: #74bf63;
+        background: var(--main-color);
     }
 }
 
@@ -355,14 +355,14 @@
 
 @-webkit-keyframes fade{
     0%{
-        background: var(--green);
+        background: var(--main-color);
     }
 
     50%{
-        background: #63b750;
+        background: var(--main-color);
     }
 
     100%{
-        background: #74bf63;
+        background: var(--main-color);
     }
 }

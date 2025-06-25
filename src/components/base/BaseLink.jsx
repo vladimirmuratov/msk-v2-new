@@ -1,24 +1,30 @@
 import { Link, Typography } from '@mui/material';
 
-export const BaseLink = ({ path, label, setCurrentPath, currentPath, isGreenHeader = false }) => {
-    const linkColor = isGreenHeader ? 'var(--white)' : 'var(--black)';
-    const activeLink = path === currentPath ? 'var(--white)': 'var(--green)'
+export const BaseLink = ({ path, label, setCurrentPath, currentPath, isColorHeader = false }) => {
+    const linkColor = isColorHeader ? 'var(--white)' : 'var(--main-color)';
+    const isActiveLink = path === currentPath;
 
     return (
         <Link
             href={path}
             onClick={() => setCurrentPath(path)}
             sx={{
-                transition: 'all 0.3s',
-                textDecoration: isGreenHeader ?'underline': 'none',
-                textDecorationColor: activeLink,
-                '&:hover': {
-                    textDecorationColor: 'var(--white)',
-                    textShadow: !isGreenHeader ? '2px 2px 2px var(--gray)' : '',
-                }
-        }}
+                textDecoration: 'none',
+            }}
         >
-            <Typography sx={{ color: linkColor, fontSize: { sm: 14, md: 16 } }}>{label}</Typography>
+            <Typography
+                sx={{
+                    color: isActiveLink ? 'var(--red)' : linkColor,
+                    fontSize: { sm: 14, md: 16 },
+                    transition: 'all 0.3s',
+                    '&:hover': {
+                        transform: 'translateY(-2px)',
+                        fontWeight: 500
+                    }
+                }}
+            >
+                {label}
+            </Typography>
         </Link>
     );
 };

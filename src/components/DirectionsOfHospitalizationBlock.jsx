@@ -15,53 +15,53 @@ export const DirectionsOfHospitalizationBlock = () => {
                 госпитализации:</Typography>
 
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Абдоминальная хирургия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Гинекология</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Лор и челюстно-лицевая
                     хирургия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Нейрохирургия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Онкология</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Офтальмохирургия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Травматология и ортопедия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Урология</Typography>
             </Box>
 
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Кардиология</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Неврология</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Терапия</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <CheckIcon sx={{ color: 'var(--green)' }} />
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Реабилитация</Typography>
             </Box>
         </Box>

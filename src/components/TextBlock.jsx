@@ -3,7 +3,7 @@ import {Box, Typography} from '@mui/material'
 export const TextBlock = ({text}) => {
     return (
         <Box sx={{
-            backgroundColor: 'var(--green)',
+            backgroundColor: 'var(--main-color)',
             marginY: {xs: '25px', sm: '50px'},
             paddingX: '32px',
             paddingY: '32px'

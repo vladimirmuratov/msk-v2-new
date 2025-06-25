@@ -6,14 +6,22 @@ export const BaseAccordionItem = ({id, question, answer}) => {
     return(
         <Accordion>
             <AccordionSummary
-                sx={{fontWeight: 500, fontSize: 18}}
+                sx={{
+                    color: 'var(--black)',
+                    fontWeight: 500,
+                    fontSize: 18,
+                    transition: 'all 0.3s',
+                    '&:hover':{
+                        color: 'var(--main-color)'
+                    }
+            }}
                 expandIcon={<ExpandMoreIcon/>}
                 aria-controls={`panel${id}-content`}
                 id={`panel${id}-header`}
             >
                 {question}
             </AccordionSummary>
-            <AccordionDetails sx={{fontSize: 18, lineHeight: 1.5, backgroundColor: 'var(--green)', color: '#fff', whiteSpace: 'pre-wrap'}}>
+            <AccordionDetails sx={{fontSize: 18, lineHeight: 1.5, backgroundColor: 'var(--main-color)', color: '#fff', whiteSpace: 'pre-wrap'}}>
                 {answer}
             </AccordionDetails>
         </Accordion>

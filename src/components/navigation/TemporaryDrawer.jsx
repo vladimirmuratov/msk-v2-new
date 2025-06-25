@@ -15,7 +15,7 @@ export const TemporaryDrawer = ({anchor, toggleDrawer, isOpen, router}) => {
                     <ListItem key={id} disablePadding>
                         <ListItemButton onClick={() => router.push(path)}>
                             <ListItemIcon>
-                                <Icon sx={{color: 'var(--green)'}}/>
+                                <Icon sx={{color: 'var(--main-color)'}}/>
                             </ListItemIcon>
                             <ListItemText primary={label}/>
                         </ListItemButton>

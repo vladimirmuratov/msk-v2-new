@@ -73,7 +73,7 @@ export const FormAction = () => {
 
             {sendForm && (
                 <BaseModal title="Сообщение отправлено!" open={sendForm} handleClose={handleCloseSuccessMessage}
-                           color="var(--green)">
+                           color="var(--main-color)">
                     <DialogContentText id="alert-dialog-description">
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>

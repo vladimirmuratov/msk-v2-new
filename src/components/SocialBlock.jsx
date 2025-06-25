@@ -3,7 +3,7 @@ import {Box, Link} from '@mui/material'
 import Image from 'next/image'
 import { email, phoneTelegram, phoneViber, phoneWhatsApp } from '@/config';
 
-const SocialBlock = ({className = ''}) => {
+const SocialBlock = ({className = '', isIconColored = false}) => {
     return (
         <Box
             className={className}
@@ -12,20 +12,40 @@ const SocialBlock = ({className = ''}) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                gap: '10px',
+                gap: '15px',
             }}
         >
-            <Link target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
+            <Link
+                target="_blank"
+                href={`https://wa.me/${phoneWhatsApp}`}
+                sx={{
+                    transition: 'all 0.3s',
+                    '&:hover': {
+                        transform: 'scale(1.1)',
+                    }
+                }}
+            >
                 <Image
-                    src="/images/social/whatsapp.svg"
+                    // src="/images/social/whatsapp.svg"
+                    src={isIconColored ? '/images/social/whatsapp-blue.svg' : '/images/social/whatsapp-white.svg'}
                     alt="icon"
                     width={30}
                     height={30}
                 />
             </Link>
-            <Link target="_blank" href={`https://t.me/${phoneTelegram}`}>
+            <Link
+                target="_blank"
+                href={`https://t.me/${phoneTelegram}`}
+                sx={{
+                    transition: 'all 0.3s',
+                    '&:hover': {
+                        transform: 'scale(1.1)',
+                    }
+                }}
+            >
                 <Image
-                    src="/images/social/telegram.svg"
+                    // src="/images/social/telegram.svg"
+                    src={isIconColored ? '/images/social/telegram-blue.svg' : '/images/social/telegram-white.svg'}
                     alt="icon"
                     width={30}
                     height={30}
@@ -39,9 +59,18 @@ const SocialBlock = ({className = ''}) => {
                     height={30}
                 />
             </Link>*/}
-            <Link href={`mailto:${email}`}>
+            <Link
+                href={`mailto:${email}`}
+                sx={{
+                    transition: 'all 0.3s',
+                    '&:hover': {
+                        transform: 'scale(1.1)',
+                    }
+                }}
+            >
                 <Image
-                    src="/images/social/email.svg"
+                    // src="/images/social/email.svg"
+                    src={isIconColored ? '/images/social/email-blue.svg' : '/images/social/email-white.svg'}
                     alt="icon"
                     width={30}
                     height={30}

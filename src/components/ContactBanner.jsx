@@ -2,7 +2,7 @@ import { Box, Link, Typography } from '@mui/material';
 import { phoneNumber } from '@/config';
 
 export const ContactBanner = ({ isMobile = false }) => {
-    const bgColor = isMobile ? 'var(--white)' : 'var(--green)';
+    const bgColor = isMobile ? 'var(--white)' : 'var(--main-color)';
     const color = isMobile ? 'var(--black)' : 'var(--white)';
     const phoneColor = isMobile ? 'var(--red)' : 'var(--white)';
 

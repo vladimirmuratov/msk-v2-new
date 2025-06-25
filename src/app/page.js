@@ -15,7 +15,8 @@ import { ContactsBlock } from '@/components/ContactsBlock';
 import { FormAction } from '@/components/FormAction';
 import { VideoBanner } from '@/components/VideoBanner';
 import { useEffect, useState } from 'react';
-import { Loader } from '@/components/loader/Loader';
+// import { Loader } from '@/components/loader/Loader/Loader';
+import { Loader2 } from '@/components/loader/Loader2/Loader2';
 
 export default function Home() {
   const [isMobile, setMobile] = useState(undefined);
@@ -49,7 +50,7 @@ export default function Home() {
           <FormAction />
         </>
       ) : (
-        <Loader />
+        <Loader2 />
       )}
     </main>
   );

@@ -30,19 +30,21 @@ export const ContactsBlock = () => {
                 sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 2fr' }, gap: { xs: '10px', sm: 0 } }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                     <Box sx={{ display: 'flex', gap: '10px' }}>
-                        <MapOutlinedIcon sx={{ color: 'var(--green)' }} />
+                        <MapOutlinedIcon sx={{ color: 'var(--main-color)' }} />
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>г. Москва, Мичуринский пр-т
                             д.6</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', alignItems: 'start', gap: '10px' }}>
-                        <LocalPhoneOutlinedIcon sx={{ color: 'var(--green)' }} />
-                        <Box sx={{display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                            <Link href={`tel:${phoneNumber}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber}</Link>
-                            <Link href={`tel:${phoneNumber2}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber2}</Link>
+                        <LocalPhoneOutlinedIcon sx={{ color: 'var(--main-color)' }} />
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                            <Link href={`tel:${phoneNumber}`}
+                                  sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber}</Link>
+                            <Link href={`tel:${phoneNumber2}`}
+                                  sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber2}</Link>
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', gap: '10px' }}>
-                        <AlternateEmailIcon sx={{ color: 'var(--green)' }} />
+                        <AlternateEmailIcon sx={{ color: 'var(--main-color)' }} />
                         <Link href={`mailto:${email}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{email}</Link>
                     </Box>
                     <Box sx={{ paddingLeft: '34px' }}>
@@ -50,9 +52,11 @@ export const ContactsBlock = () => {
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ИНН: 9725116009</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>КПП: 772501001</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ОГРН: 1237700147343</Typography>
+                        <Box sx={{ marginTop: '15px' }}>
+                            <SocialBlock className="banner-social-mobile" isIconColored={true} />
+                        </Box>
                     </Box>
 
-                    <SocialBlock className="banner-social-mobile" />
 
                 </Box>
                 <Box>

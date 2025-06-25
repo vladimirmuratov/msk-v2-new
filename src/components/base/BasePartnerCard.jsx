@@ -3,7 +3,7 @@ import {Box, Typography} from '@mui/material'
 export const BasePartnerCard = ({logo, label, address, license, imgStyle = {}}) => {
     return(
         <Box sx={{
-            border: '1px solid var(--green)',
+            border: '1px solid var(--main-color)',
             borderRadius: '5px',
             padding: '10px',
         }}>

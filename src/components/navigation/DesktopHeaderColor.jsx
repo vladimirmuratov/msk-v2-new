@@ -4,7 +4,7 @@ import { links } from '@/config';
 import { BaseLink } from '@/components/base/BaseLink';
 import SocialBlock from '@/components/SocialBlock';
 
-export const DesktopHeaderGreen = ({ isShow, currentPath, setCurrentPath}) => {
+export const DesktopHeaderColor = ({ isShow, currentPath, setCurrentPath}) => {
 
     return (
         <Box
@@ -12,7 +12,7 @@ export const DesktopHeaderGreen = ({ isShow, currentPath, setCurrentPath}) => {
             className={`container ${isShow ? 'pos-fix' : ''}`}
             sx={{
                 zIndex: 1,
-                backgroundColor: 'var(--green)',
+                backgroundColor: 'var(--main-color)',
                 paddingY: '12px',
                 paddingX: { xs: '24px', sm: '32px' },
                 display: 'flex',
@@ -24,7 +24,7 @@ export const DesktopHeaderGreen = ({ isShow, currentPath, setCurrentPath}) => {
             }}>
 
             <Link href="/" onClick={() => setCurrentPath('')}>
-                <img className="logo" src="/images/logo-white.png" alt="logo" />
+                <img className="logo" src="/images/logo/logo-bg-blue.png" alt="logo" />
             </Link>
 
             <Box component="nav" sx={{ display: { xs: 'none', sm: 'flex' }, gap: { sm: '10px', md: '15px' } }}>
@@ -33,7 +33,7 @@ export const DesktopHeaderGreen = ({ isShow, currentPath, setCurrentPath}) => {
                     {...link}
                     setCurrentPath={setCurrentPath}
                     currentPath={currentPath}
-                    isGreenHeader={true}
+                    isColorHeader={true}
                 />)}
             </Box>
 

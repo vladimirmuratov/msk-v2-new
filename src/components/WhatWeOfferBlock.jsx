@@ -14,41 +14,41 @@ export const WhatWeOfferBlock = () => {
                 предлагаем:</Typography>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Плановая платная госпитализация - на
                     связи 24/7</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Экстренная платная
                     госпитализация</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Платная госпитализация без полиса
                     ОМС</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Платная госпитализация из
                     регионов</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Перевод пациента из одной больницы в
                     другую</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Платная госпитализация в федеральные и
                     ведомственные мед.учреждения</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Работа с тяжёлыми пациентами</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Собственная патронажная
                     служба</Typography>
             </Box>

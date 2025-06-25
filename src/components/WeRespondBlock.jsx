@@ -37,7 +37,7 @@ export const WeRespondBlock = () => {
             <Box component="article"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--green)' }} />
+                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3"
                                 sx={{ color: 'var(--red)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
                         Оптимизация времени и ресурсов
@@ -52,7 +52,7 @@ export const WeRespondBlock = () => {
             <Box component="article"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--green)' }} />
+                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3"
                                 sx={{ color: 'var(--red)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
                         Персонализированный подход
@@ -67,7 +67,7 @@ export const WeRespondBlock = () => {
             <Box component="article"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--green)' }} />
+                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3"
                                 sx={{ color: 'var(--red)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
                         Полное сопровождение на всех этапах
@@ -82,7 +82,7 @@ export const WeRespondBlock = () => {
             <Box component="article"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--green)' }} />
+                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3"
                                 sx={{ color: 'var(--red)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
                         Прозрачность и контроль стоимости
@@ -97,7 +97,7 @@ export const WeRespondBlock = () => {
             <Box component="article"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--green)' }} />
+                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3"
                                 sx={{ color: 'var(--red)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
                         Надёжные партнёры

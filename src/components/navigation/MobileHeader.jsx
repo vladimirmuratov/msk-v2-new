@@ -11,7 +11,7 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
 
             <Box component="header"
                  sx={{
-                     backgroundColor: 'var(--green)',
+                     backgroundColor: 'var(--main-color)',
                      paddingY: '8px',
                      paddingX: '12px',
                      display: 'flex',
@@ -19,7 +19,7 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                      justifyContent: 'space-between'
                  }}>
                 <Link href="/">
-                    <img className="logo" src="/images/logo-white.png" alt="logo"/>
+                    <img className="logo" src="/images/logo/logo-bg-blue.png" alt="logo"/>
                 </Link>
 
                 {/*<Link

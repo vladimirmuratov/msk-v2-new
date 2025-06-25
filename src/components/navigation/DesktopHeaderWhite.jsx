@@ -50,7 +50,7 @@ export const DesktopHeaderWhite = ({ onHide, currentPath, setCurrentPath }) => {
                 }}>
 
                 <Link href="/" onClick={() => setCurrentPath('')}>
-                    <img className="logo" src="/images/logo.png" alt="logo" />
+                    <img className="logo" src="/images/logo/logo-blue.png" alt="logo" />
                 </Link>
 
                 <Box component="nav" sx={{ display: { xs: 'none', sm: 'flex' }, gap: { sm: '10px', md: '15px' } }}>
@@ -58,11 +58,11 @@ export const DesktopHeaderWhite = ({ onHide, currentPath, setCurrentPath }) => {
                         key={link.id}
                         {...link}
                         setCurrentPath={setCurrentPath}
-                        currentPath={currentPath} />
-                    )}
+                        currentPath={currentPath}
+                    />)}
                 </Box>
 
-                <SocialBlock />
+                <SocialBlock isIconColored={true} />
 
             </Box>
 

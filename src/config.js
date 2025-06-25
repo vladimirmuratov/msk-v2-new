@@ -42,7 +42,7 @@ export const cardsBlock = [
     },
     {
         id: createId(),
-        label: 'Больницы',
+        label: 'Партнеры',
         icon: '/images/icons/hospital.svg',
         path: '#partners',
         bgcolor: '#5000CD',
