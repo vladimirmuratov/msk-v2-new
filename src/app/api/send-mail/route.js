@@ -42,7 +42,7 @@ export async function POST(request) {
     const message2 = {
       from: process.env.ADDRESS_FROM,
       to: [req.email],
-      subject: `Вы оставили заявку на звонок на сайте msk-ambulance.ru ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
+      subject: `Вы оставили заявку на звонок на сайте msk-emergency.ru ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
       html: ` <p>Имя: ${req?.person}</p>
                     <p>Дата рождения: ${req?.dateBirth ?? 'Нет'}</p>
                     <p>Телефон: ${req?.phone}</p>
@@ -50,7 +50,15 @@ export async function POST(request) {
                     <p>Информация: ${req?.info ?? 'Нет'}</p>`,
     };
 
-    transporter.sendMail(message2);
+    const transporter2 = nodemailer.createTransport({
+      service: 'mail.ru',
+      auth: {
+        user: process.env.ADDRESS_FROM,
+        pass: process.env.PASSWORD,
+      },
+    });
+
+    transporter2.sendMail(message2);
   }
 
   return error
