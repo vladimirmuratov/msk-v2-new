@@ -22,7 +22,7 @@ export const BaseModal = ({title = '', children, open, handleClose, color = 'var
                 onClose={handleClose}
                 aria-describedby='alert-dialog-slide-description'
             >
-                <DialogTitle sx={{color: color}}>{title}</DialogTitle>
+                <DialogTitle sx={{color: color, textAlign: 'center'}}>{title}</DialogTitle>
                 <DialogContent>
                     <Box id='alert-dialog-slide-description' sx={{paddingTop: '10px'}}>
                         {children}

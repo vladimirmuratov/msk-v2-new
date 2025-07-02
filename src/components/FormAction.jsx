@@ -74,7 +74,7 @@ export const FormAction = () => {
             {sendForm && (
                 <BaseModal title="Сообщение отправлено!" open={sendForm} handleClose={handleCloseSuccessMessage}
                            color="var(--main-color)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
                 </BaseModal>
@@ -83,7 +83,7 @@ export const FormAction = () => {
             {isError && (
                 <BaseModal title="Ошибка сервера!" open={isError} handleClose={handleCloseFailedMessage}
                            color="var(--red)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Попробуйте позже
                     </DialogContentText>
                 </BaseModal>
