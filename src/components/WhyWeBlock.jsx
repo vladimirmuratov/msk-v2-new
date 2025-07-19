@@ -43,7 +43,7 @@ export const WhyWeBlock = () => {
                     sx={{
                         fontSize: { xs: 22, sm: 24 },
                         color: 'var(--red)',
-                        paddingTop: { xs: '10px', sm: '20px' },
+                        paddingTop: { xs: '25px', sm: '50px' },
                         textAlign: 'center',
                         fontStyle: 'italic',
                         textWrap: 'balance',
