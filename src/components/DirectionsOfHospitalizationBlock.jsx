@@ -64,6 +64,14 @@ export const DirectionsOfHospitalizationBlock = () => {
                 <CheckIcon sx={{ color: 'var(--main-color)' }} />
                 <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Реабилитация</Typography>
             </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
+                <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Эндопротезирование суставов</Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <CheckIcon sx={{ color: 'var(--main-color)' }} />
+                <Typography variant="h3" sx={{ fontSize: 20, fontWeight: 500 }}>Геронтология</Typography>
+            </Box>
         </Box>
     );
 };
