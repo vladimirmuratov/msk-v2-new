@@ -38,12 +38,13 @@ export default function Home() {
         <>
           {isMobile ? <Banner /> : <VideoBanner />}
           <CardsBlock />
+          <BaseCallBlock text='Ответим на любые вопросы по госпитализации и лечению. Звоните!'/>
           <AboutBlock />
           <WhyWeBlock />
           <WeRespondBlock />
           {/*<WhatWeOfferBlock/>*/}
           <DirectionsOfHospitalizationBlock />
-          <BaseCallBlock/>
+          <BaseCallBlock text='Остались вопросы? Звоните!'/>
           <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
           <PartnersBlock />
           <BaseAccordion id="service" title="Услуги" items={services} />
