@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 
-export const WeRespondBlock = () => {
+export const WeRespondBlockVar1 = () => {
     return (
         <Box
             component="section"
