@@ -26,7 +26,7 @@ export const AboutBlock = () => {
             </Typography>
 
             <Typography component="p" sx={{ fontSize: 20, marginBottom: '10px' }}>
-                Давайте расскажу немного о нас на человеческом языке.
+                Давайте расскажу немного о нас.
             </Typography>
             <Typography component="p" sx={{ fontSize: 20, marginBottom: '10px' }}>
                 Мы — не просто компания, которая оформляет бумажки между пациентом и клиникой. Мы — тот самый надежный

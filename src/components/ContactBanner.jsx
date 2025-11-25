@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from '@mui/material';
-import { phoneNumber } from '@/config';
+import { email, phoneNumber } from '@/config';
 
 export const ContactBanner = ({ isMobile = false }) => {
     const bgColor = isMobile ? 'var(--white)' : 'var(--main-color)';
@@ -16,7 +16,8 @@ export const ContactBanner = ({ isMobile = false }) => {
             color: 'var(--black)',
             backgroundColor: bgColor
         }}>
-            <Typography
+
+            {/*<Typography
                 sx={{
                     color: color,
                     fontSize: { xs: 12, sm: 14, md: 16 },
@@ -24,7 +25,21 @@ export const ContactBanner = ({ isMobile = false }) => {
             }}
             >
                 г. Москва, Мичуринский пр-т , д. 6
-            </Typography>
+            </Typography>*/}
+
+            <Link
+                href={`mailto:${email}`}
+                sx={{
+                    color: phoneColor,
+                    fontSize: { xs: 12, sm: 14, md: 16 },
+                    fontWeight: 500,
+                    textDecorationColor: 'var(--white)',
+                    textShadow: !isMobile ? '1px 1px 1px var(--gray)' : '',
+                }}
+            >
+                {email}
+            </Link>
+
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Link
                     href={`tel:${phoneNumber}`}
