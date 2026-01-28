@@ -31,7 +31,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" prefix="og: https://ogp.me/ns#">
         <head>
-            <meta name="yandex-verification" content="dd2e2dbaa184eaca" />
+            {/*<meta name="yandex-verification" content="dd2e2dbaa184eaca" />*/} {/*https://www.msk-emergency.ru*/}
+            <meta name="yandex-verification" content="7827291a3cf86fb6" /> {/*https://msk-emergency.vercel.app*/}
             <meta name="google-site-verification" content="ULxFdlnvp2gnAXLazRK1F8C95byeEkOULFcsE4swYWI" />
         </head>
         <body className={montserrat.className}>
