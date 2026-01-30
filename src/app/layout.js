@@ -12,7 +12,7 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    metadataBase: new URL('https://www.msk-emergency.ru/'),
+    metadataBase: new URL('https://msk-emergency.vercel.app/'),
     title: 'Медицинская Сервисная Компания. Госпитализация в лучшие клиники Москвы. Клиники управления делами Президента РФ. 8 (499) 719-81-00, 24/7',
     description:
         'Медицинская Сервисная Компания – организация платной госпитализации в федеральные, ведомственные и частные клиники Москвы. Быстрый подбор врачей, запись на лечение, сопровождение пациентов. Доступ к современной диагностике и операциям у ведущих специалистов. Медицинский туризм.',
@@ -21,7 +21,7 @@ export const metadata = {
         title: 'Медицинская Сервисная Компания. Госпитализация в лучшие клиники Москвы. Клиники управления делами Президента РФ. 8 (499) 719-81-00, 24/7',
         description: 'Медицинская Сервисная Компания – организация платной госпитализации в федеральные, ведомственные и частные клиники Москвы. Быстрый подбор врачей, запись на лечение, сопровождение пациентов. Доступ к современной диагностике и операциям у ведущих специалистов. Медицинский туризм.',
         images: ['/images/banner3.webp'],
-        url: 'https://www.msk-emergency.ru/',
+        url: 'https://msk-emergency.vercel.app/',
         type: 'website',
         locale: 'ru_RU',
     }
@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" prefix="og: https://ogp.me/ns#">
         <head>
-            {/*<meta name="yandex-verification" content="dd2e2dbaa184eaca" />*/} {/*https://www.msk-emergency.ru*/}
-            <meta name="yandex-verification" content="7827291a3cf86fb6" /> {/*https://msk-emergency.vercel.app*/}
+            <meta name="yandex-verification" content="7827291a3cf86fb6" />
             <meta name="google-site-verification" content="ULxFdlnvp2gnAXLazRK1F8C95byeEkOULFcsE4swYWI" />
+            <link rel="canonical" href="https://msk-emergency.vercel.app"/>
         </head>
         <body className={montserrat.className}>
         <AppRouterCacheProvider>

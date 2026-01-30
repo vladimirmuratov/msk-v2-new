@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.msk-emergency.ru/sitemap.xml
+Sitemap: https://msk-emergency.vercel.app/sitemap.xml
