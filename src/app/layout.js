@@ -31,8 +31,6 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" prefix="og: https://ogp.me/ns#">
         <head>
-            <title>Test title</title>
-            <meta name="description" content="Test description" />
             <meta name="yandex-verification" content="7827291a3cf86fb6" />
             <meta name="google-site-verification" content="ULxFdlnvp2gnAXLazRK1F8C95byeEkOULFcsE4swYWI" />
             <link rel="canonical" href="https://msk-emergency.vercel.app"/>
