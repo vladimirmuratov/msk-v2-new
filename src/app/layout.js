@@ -24,6 +24,9 @@ export const metadata = {
         url: 'https://msk-emergency.vercel.app/',
         type: 'website',
         locale: 'ru_RU',
+    },
+    alternates: {
+        canonical: 'https://msk-emergency.vercel.app',
     }
 };
 
